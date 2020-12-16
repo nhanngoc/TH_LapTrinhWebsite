@@ -1,0 +1,65 @@
+<?php 
+	if(!isset($bien_bao_mat)){exit();}
+?>
+<?php
+	
+	if(isset($_POST['bieu_mau_them_loai']))
+	{
+		include("chuc_nang/loai/them_loai_vao_csdl.php");
+		trang_truoc_html();
+	}
+	if(isset($_POST['bieu_mau_sua_loai']))
+	{
+		include("chuc_nang/loai/sua_loai_o_trong_csdl.php");
+		trang_truoc_html();
+	}
+	if(isset($_GET['xoa_loai']))
+	{
+		include("chuc_nang/loai/xoa_loai.php");
+		trang_truoc_html();
+	}
+	if(isset($_POST['bieu_mau_them_san_pham']))
+	{
+		include("chuc_nang/san_pham/them_san_pham_vao_csdl.php");
+		trang_truoc_html();
+	}
+	if(isset($_POST['bieu_mau_sua_san_pham']))
+	{
+		include("chuc_nang/san_pham/sua_san_pham_o_trong_csdl.php");
+		trang_truoc_html();
+	}
+	if(isset($_GET['xoa_san_pham']))
+	{
+		include("chuc_nang/san_pham/xoa_san_pham.php");
+		trang_truoc_html();
+	}
+	if(isset($_GET['xoa_hoa_don']))
+	{
+		include("chuc_nang/hoa_don/xoa_hoa_don.php");
+		trang_truoc_html();
+	}
+	if(isset($_GET['xoa_hoa_don_o_trang_chi_tiet']))
+	{
+		include("chuc_nang/hoa_don/xoa_hoa_don_o_trang_chi_tiet.php");
+		trang_truoc_html();
+	}
+	if(isset($_POST['bieu_mau_san_pham_trang_chu']))
+	{
+		include("chuc_nang/san_pham_trang_chu/sua_san_pham_trang_chu.php");
+		trang_truoc_html();
+	}
+	
+	if(isset($_POST['bieu_mau_sua_thong_tin_quan_tri']))
+	{
+		include("chuc_nang/quan_tri_2/sua_thong_tin_quan_tri_o_trong_csdl.php");
+		trang_truoc_html();
+	}	
+	if(isset($_GET['thamso']))
+	{
+		if($_GET['thamso']=="thoat")
+		{
+			include("chuc_nang/quan_tri_2/thoat.php");
+			trang_truoc_html();
+		}
+	}
+?>

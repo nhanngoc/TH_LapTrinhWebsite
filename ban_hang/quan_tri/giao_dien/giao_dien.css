@@ -1,0 +1,11 @@
+table.tb_a1 tr.a_1 {height:30px;}
+table.tb_a1 tr.a_1:hover {background:#FFFF99;}
+
+a.lk_a1{text-decoration:none;color:blue;}
+a.lk_a1:hover{color:red;}
+
+a.phan_trang{text-decoration:none;color:blue;font-size:22px;}
+a.phan_trang:hover{color:red;}
+
+a.lk_c2{text-decoration:none;color:black;font-size:22px;line-height:30px;}
+a.lk_c2:hover{color:red;}

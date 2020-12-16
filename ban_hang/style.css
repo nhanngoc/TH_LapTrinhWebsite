@@ -1,0 +1,474 @@
+
+ *{
+	margin: 0;
+	padding: 0;
+  }
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(images/body_bg3.jpg);
+	height: 100%;
+	
+}
+#container{
+	width:88%;
+	margin:0 auto;
+	padding:0 1%;
+	background:#FFF;
+}
+
+.anh img{
+	width: 70%; /** Hình ảnh rộng 100% so với vùng chứa **/ 
+	height: 300px;
+	transition: all 1s; /** Tạo độ mượt **/
+}
+.anh :hover img { 
+	-webkit-transform: scale(1.2); transform: scale(1.2); }
+/*header		rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
+
+.header_top{
+	height:100px;
+	padding:20px 0;
+	background:#FFF;
+}
+.logo{
+	float:left;
+	width:30%;
+}
+
+/**** Header Top Right ****/
+.header_top_right{
+	float:left;
+	width:70%;
+	margin-top:35px;
+}
+.search_box{
+	float:left;
+	border: 1px solid #DBDBDB;
+	position:relative;
+	width:47%;
+}
+.search_box input[type="text"]{
+	width:74%;
+	padding:10px 8px;
+	outline:none;
+	border:none;
+	background:none;
+	font-size:14px;
+	color:#333;
+	font-family:Arial;
+	outline:none;
+	margin:0;
+}
+.search_box input[type="submit"]{
+	border:none;
+	cursor:pointer;
+	color:#FFF;
+	font-size:12px;
+	padding:10px 15px;
+	height: 36px;
+	margin:0;
+	
+	background: -moz-linear-gradient(top,#70389C,#602D8D);
+	background: -o-linear-gradient(top,#70389C,#602D8D);
+	background: -ms-linear-gradient(top,#70389C,#602D8D);
+	
+	transition: all .9s;
+	position:absolute;
+	right:0;
+	top:0;
+}
+.search_box input[type="submit"]:hover{
+	background:#444;
+}
+/*gio hang*/
+.shopping_cart{
+	float:left;
+	width: 16%;
+	height: 40px;
+	position:relative;
+	margin-left:150px;
+	
+	
+	z-index: 99;
+	
+	box-sizing: border-box;
+	cursor:pointer;
+}
+.shopping {
+	float:left;
+	width: 45%;
+	height: 100%;
+}
+.cart{
+	float: right;
+	width: 55%;
+	height: 100%;
+	padding: 0 0 0 10px;
+	line-height: 36px;
+	
+	box-sizing: border-box;
+}
+
+.shopping_cart span.cart_title{
+	font-size:12px;
+	font-weight:bold;
+	float: left;
+	color: #CC3636;
+}
+.cart_title .san_pham{
+	color: #1fbcc2;
+}
+
+.shopping a img{
+	display: block;
+	max-width:125px;
+	max-height:40px;
+	width: auto;
+	height: auto;
+	  
+}
+/* */
+
+
+.login{
+	float: right;
+	margin-left:10px;
+	width:60px;
+	height: 38px;
+	display: block;
+	border: 1px solid #CECECE;
+	text-align: center;
+
+	box-sizing: border-box;
+	background: url(../images/gradient_light-1.png) 0 0 repeat-x;
+}
+.login span a img{
+	padding-top:8px;
+}
+/*** Login ***/
+
+/* end of header       rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+
+.menu_ngang ul {
+	background:#602D8D;
+	list-style-type: none;
+	text-align: center;
+}
+.menu_ngang li {
+	display: inline-block;
+	width: 130px;
+	line-height: 40px;
+	margin-left: -5px;
+	position: relative;
+}
+.menu_ngang a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+.menu_ngang a:hover {
+	background: #F1F1F1;
+	color: #333;
+}
+/*==Dropdown Menu==*/
+.sub-menu {
+display: none;
+position: absolute;
+}
+
+.menu_ngang li:hover .sub-menu {
+display: block;
+}
+.sub-menu li {
+margin-left: 0 !important;
+}
+
+/*==Menu cấp 3==*/
+.sub-menu > ul {
+display: none !important;
+}
+/* start loai  //////////////////////////////////*/
+.loai ul{
+
+	list-style-type: none;
+	text-align: center;
+	width:120px;
+	
+}
+.loai li{
+	display: inline-block;
+	width: 170px;
+	line-height: 40px;
+	margin-left: -5px;
+}
+.loai a 
+{
+	color:#602D8D;
+	text-decoration: none;
+	display:block;
+}
+.loai a:hover
+{
+	background: #602D8D;
+	color: #fff
+}
+/*a
+{
+	text-decoration: none;
+}
+/* start h_menu */
+.menu-float-right {
+    width: 100px;
+    position: fixed;
+    top: 35%;
+    right: 0;
+    z-index: 99999;
+}
+.menu-float-right #group {
+    position: absolute;
+    right: 0px;
+}
+.menu-float-right ul {
+    padding: 0;
+}
+.menu-float-right #group ul li {
+    background:#602D8D;
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.menu-float-right #group ul li img {
+    width: 57px;
+    border-radius: 5px;
+}
+.menu-float-right #group ul li .mo-ta {
+    font-size: 9px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: 5%;
+    margin-bottom: 0px;
+}
+
+/* end of menu  uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu */
+/* start footer*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+
+
+.footer-distributed{
+	background: #602D8D;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-links img{
+	width: 30px;
+	height: 37px;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+.footer-center img{
+	width: 27px;
+  height: 27px;
+}
+
+.footer-distributed .footer-links a:before {
+  
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+.footer-icons img{
+  width: 30px;
+  height: 30px;
+}
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #602D8D;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+/*echo "<tr>";
+			echo "<td colspan='3' align='center' >";
+				echo "<div class='phan_trang' >";
+					for($i=1;$i<=$so_trang;$i++)
+					{
+						$link="?thamso=tim_kiem&tu_khoa=".$_GET['tu_khoa']."&trang=".$i;
+						echo "<a href='$link' >";
+							echo $i;echo " ";
+						echo "</a>";
+					}				
+				echo "</div>";
+			echo "</td>";
+		echo "</tr>";
+		echo "</table>";
+
