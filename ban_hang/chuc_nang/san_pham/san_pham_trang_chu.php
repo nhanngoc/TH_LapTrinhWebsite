@@ -1,9 +1,6 @@
 <br><br>
 <h4>
-Kho Github :
-<br>
-	<p><a href="https://github.com/nhanngoc/TH_LapTrinhWebsite.git">https://github.com/nhanngoc/TH_LapTrinhWebsite.git</a></p>
-	<br>
+
 Sản Phẩm Nổi Bật :
 </h4>
 <br><br>
